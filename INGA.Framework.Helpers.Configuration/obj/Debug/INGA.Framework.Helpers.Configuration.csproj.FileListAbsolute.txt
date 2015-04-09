@@ -1,0 +1,5 @@
+C:\Users\Cem\Source\Workspaces\Development\INGA-v1.0.0-cem.basaranoglu\INGA.Framework.Helpers.Configuration\bin\Debug\INGA.Framework.Helpers.Configuration.dll
+C:\Users\Cem\Source\Workspaces\Development\INGA-v1.0.0-cem.basaranoglu\INGA.Framework.Helpers.Configuration\bin\Debug\INGA.Framework.Helpers.Configuration.pdb
+C:\Users\Cem\Source\Workspaces\Development\INGA-v1.0.0-cem.basaranoglu\INGA.Framework.Helpers.Configuration\obj\Debug\INGA.Framework.Helpers.Configuration.csprojResolveAssemblyReference.cache
+C:\Users\Cem\Source\Workspaces\Development\INGA-v1.0.0-cem.basaranoglu\INGA.Framework.Helpers.Configuration\obj\Debug\INGA.Framework.Helpers.Configuration.dll
+C:\Users\Cem\Source\Workspaces\Development\INGA-v1.0.0-cem.basaranoglu\INGA.Framework.Helpers.Configuration\obj\Debug\INGA.Framework.Helpers.Configuration.pdb

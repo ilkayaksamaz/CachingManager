@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79F1EB5D-832B-4D62-B120-164EB3947666}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>INGA.Framework.Caching.Manager</RootNamespace>
+    <AssemblyName>INGA.Framework.Caching.Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CachingFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\INGA.Framework.Caching.Common\INGA.Framework.Caching.Common.csproj">
+      <Project>{B8655F76-198F-4BED-AA33-C6AD339ECB62}</Project>
+      <Name>INGA.Framework.Caching.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\INGA.Framework.Caching.InMemory\INGA.Framework.Caching.InMemory.csproj">
+      <Project>{92c41ddc-b85d-4b91-a4df-c923a8abb9b3}</Project>
+      <Name>INGA.Framework.Caching.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\INGA.Framework.Caching.Memcached\INGA.Framework.Caching.Memcached.csproj">
+      <Project>{876240a3-8de9-47ca-abf6-e7e86b9e5e55}</Project>
+      <Name>INGA.Framework.Caching.Memcached</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\INGA.Framework.Caching.Redis\INGA.Framework.Caching.Redis.csproj">
+      <Project>{64cb53e9-e95a-4b90-b0f4-42252608773e}</Project>
+      <Name>INGA.Framework.Caching.Redis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\INGA.Framework.Helpers.Configuration\INGA.Framework.Helpers.Configuration.csproj">
+      <Project>{76a6aa53-98cf-4f53-9466-5ef8abf7e118}</Project>
+      <Name>INGA.Framework.Helpers.Configuration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

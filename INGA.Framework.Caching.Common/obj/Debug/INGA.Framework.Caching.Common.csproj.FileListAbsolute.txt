@@ -1,0 +1,5 @@
+C:\Users\Cem\Source\Workspaces\Development\INGA-v1.0.0-cem.basaranoglu\INGA.Framework.Caching.Common\bin\Debug\INGA.Framework.Caching.Common.dll
+C:\Users\Cem\Source\Workspaces\Development\INGA-v1.0.0-cem.basaranoglu\INGA.Framework.Caching.Common\bin\Debug\INGA.Framework.Caching.Common.pdb
+C:\Users\Cem\Source\Workspaces\Development\INGA-v1.0.0-cem.basaranoglu\INGA.Framework.Caching.Common\obj\Debug\INGA.Framework.Caching.Common.csprojResolveAssemblyReference.cache
+C:\Users\Cem\Source\Workspaces\Development\INGA-v1.0.0-cem.basaranoglu\INGA.Framework.Caching.Common\obj\Debug\INGA.Framework.Caching.Common.dll
+C:\Users\Cem\Source\Workspaces\Development\INGA-v1.0.0-cem.basaranoglu\INGA.Framework.Caching.Common\obj\Debug\INGA.Framework.Caching.Common.pdb
