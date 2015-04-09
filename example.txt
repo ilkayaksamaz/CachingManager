@@ -1,0 +1,20 @@
+CREATE A SECTION ON YOUR WEBCONFIG LIKE THIS : 
+
+ <configSections>
+    <section name="CacheProvidersSection" type="INGA.Framework.Helpers.Configuration.ConfigurationSections.CacheProvidersSection"/>
+  </configSections>
+
+ <CacheProvidersSection>
+    <CacheProviders>
+      <add Name="Redis" Host="127.0.0.1" Port="6996" Username="*" Password="*" IsActive="1" CacheName=""/>
+      <add Name="CouchbaseMemcached" Host="127.0.0.1" Port="11211" Username="*" Password="*" IsActive="0" CacheName=""/>
+      <add Name="InMemoryCache" Host="*" Port="*" Username="*" Password="*" IsActive="0" CacheName=""/>
+    </CacheProviders>
+  </CacheProvidersSection>
+
+
+AND USE IT:
+   //get active provider which is defined on webconfig as ISACTIVE is 1.
+   var fac = CachingFactory.Instance;
+   fac.SetAsync("test", "myValue");
+   var value = fac.GetAsync<string>("test");
