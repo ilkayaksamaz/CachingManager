@@ -16,5 +16,5 @@ CREATE A SECTION ON YOUR WEBCONFIG LIKE THIS :
 AND USE IT:
    //get active provider which is defined on webconfig as ISACTIVE is 1.
    var fac = CachingFactory.Instance;
-   fac.SetAsync("test", "myValue");
-   var value = fac.GetAsync<string>("test");
+  fac.Set("test1", "asdsda1"); 
+            var value = fac.Get<string>("test");
